@@ -1,0 +1,292 @@
+{
+    "http://www.boldsystems.org/pics/PNGTY/960680d+1406335524.jpg": {
+        "conceptrecid": "1126362",
+        "created": "2022-11-04T15:15:19.242224+00:00",
+        "files": [],
+        "id": 1126363,
+        "links": {
+            "bucket": "https://sandbox.zenodo.org/api/files/58af84cd-8036-49b2-b53a-bfd097e2f4e4",
+            "discard": "https://sandbox.zenodo.org/api/deposit/depositions/1126363/actions/discard",
+            "edit": "https://sandbox.zenodo.org/api/deposit/depositions/1126363/actions/edit",
+            "files": "https://sandbox.zenodo.org/api/deposit/depositions/1126363/files",
+            "html": "https://sandbox.zenodo.org/deposit/1126363",
+            "latest_draft": "https://sandbox.zenodo.org/api/deposit/depositions/1126363",
+            "latest_draft_html": "https://sandbox.zenodo.org/deposit/1126363",
+            "publish": "https://sandbox.zenodo.org/api/deposit/depositions/1126363/actions/publish",
+            "self": "https://sandbox.zenodo.org/api/deposit/depositions/1126363"
+        },
+        "metadata": {
+            "prereserve_doi": {
+                "doi": "10.5072/zenodo.1126363",
+                "recid": 1126363
+            }
+        },
+        "modified": "2022-11-04T15:15:19.242239+00:00",
+        "owner": 25613,
+        "record_id": 1126363,
+        "state": "unsubmitted",
+        "submitted": false,
+        "title": ""
+    },
+    "http://www.boldsystems.org/pics/PNGTY/960680+1446592332.jpg": {
+        "conceptrecid": "1126364",
+        "created": "2022-11-04T15:15:20.787333+00:00",
+        "files": [],
+        "id": 1126365,
+        "links": {
+            "bucket": "https://sandbox.zenodo.org/api/files/84d052e7-b24b-4ad9-a8c1-8493dbe785e9",
+            "discard": "https://sandbox.zenodo.org/api/deposit/depositions/1126365/actions/discard",
+            "edit": "https://sandbox.zenodo.org/api/deposit/depositions/1126365/actions/edit",
+            "files": "https://sandbox.zenodo.org/api/deposit/depositions/1126365/files",
+            "html": "https://sandbox.zenodo.org/deposit/1126365",
+            "latest_draft": "https://sandbox.zenodo.org/api/deposit/depositions/1126365",
+            "latest_draft_html": "https://sandbox.zenodo.org/deposit/1126365",
+            "publish": "https://sandbox.zenodo.org/api/deposit/depositions/1126365/actions/publish",
+            "self": "https://sandbox.zenodo.org/api/deposit/depositions/1126365"
+        },
+        "metadata": {
+            "prereserve_doi": {
+                "doi": "10.5072/zenodo.1126365",
+                "recid": 1126365
+            }
+        },
+        "modified": "2022-11-04T15:15:20.787350+00:00",
+        "owner": 25613,
+        "record_id": 1126365,
+        "state": "unsubmitted",
+        "submitted": false,
+        "title": ""
+    },
+    "http://www.boldsystems.org/pics/GWORB/BC_ZSM_Lep_02244+1180603316.jpg": {
+        "conceptrecid": "1126366",
+        "created": "2022-11-04T15:15:21.943618+00:00",
+        "files": [],
+        "id": 1126367,
+        "links": {
+            "bucket": "https://sandbox.zenodo.org/api/files/677eb2b4-be4a-4906-b15f-7e089d66fbdf",
+            "discard": "https://sandbox.zenodo.org/api/deposit/depositions/1126367/actions/discard",
+            "edit": "https://sandbox.zenodo.org/api/deposit/depositions/1126367/actions/edit",
+            "files": "https://sandbox.zenodo.org/api/deposit/depositions/1126367/files",
+            "html": "https://sandbox.zenodo.org/deposit/1126367",
+            "latest_draft": "https://sandbox.zenodo.org/api/deposit/depositions/1126367",
+            "latest_draft_html": "https://sandbox.zenodo.org/deposit/1126367",
+            "publish": "https://sandbox.zenodo.org/api/deposit/depositions/1126367/actions/publish",
+            "self": "https://sandbox.zenodo.org/api/deposit/depositions/1126367"
+        },
+        "metadata": {
+            "prereserve_doi": {
+                "doi": "10.5072/zenodo.1126367",
+                "recid": 1126367
+            }
+        },
+        "modified": "2022-11-04T15:15:21.943634+00:00",
+        "owner": 25613,
+        "record_id": 1126367,
+        "state": "unsubmitted",
+        "submitted": false,
+        "title": ""
+    },
+    "PNGTY639-13-seq": {
+        "conceptrecid": "1126378",
+        "created": "2022-11-04T15:52:30.645062+00:00",
+        "files": [],
+        "id": 1126379,
+        "links": {
+            "bucket": "https://sandbox.zenodo.org/api/files/01986ecb-b2de-4a2e-9566-b4bdce67d496",
+            "discard": "https://sandbox.zenodo.org/api/deposit/depositions/1126379/actions/discard",
+            "edit": "https://sandbox.zenodo.org/api/deposit/depositions/1126379/actions/edit",
+            "files": "https://sandbox.zenodo.org/api/deposit/depositions/1126379/files",
+            "html": "https://sandbox.zenodo.org/deposit/1126379",
+            "latest_draft": "https://sandbox.zenodo.org/api/deposit/depositions/1126379",
+            "latest_draft_html": "https://sandbox.zenodo.org/deposit/1126379",
+            "publish": "https://sandbox.zenodo.org/api/deposit/depositions/1126379/actions/publish",
+            "self": "https://sandbox.zenodo.org/api/deposit/depositions/1126379"
+        },
+        "metadata": {
+            "prereserve_doi": {
+                "doi": "10.5072/zenodo.1126379",
+                "recid": 1126379
+            }
+        },
+        "modified": "2022-11-04T15:52:30.645084+00:00",
+        "owner": 25613,
+        "record_id": 1126379,
+        "state": "unsubmitted",
+        "submitted": false,
+        "title": ""
+    },
+    "PNGTY1842-15-seq": {
+        "conceptrecid": "1126380",
+        "created": "2022-11-04T15:52:31.224325+00:00",
+        "files": [],
+        "id": 1126381,
+        "links": {
+            "bucket": "https://sandbox.zenodo.org/api/files/2c3fc697-2cdd-4c18-957d-975180391cb4",
+            "discard": "https://sandbox.zenodo.org/api/deposit/depositions/1126381/actions/discard",
+            "edit": "https://sandbox.zenodo.org/api/deposit/depositions/1126381/actions/edit",
+            "files": "https://sandbox.zenodo.org/api/deposit/depositions/1126381/files",
+            "html": "https://sandbox.zenodo.org/deposit/1126381",
+            "latest_draft": "https://sandbox.zenodo.org/api/deposit/depositions/1126381",
+            "latest_draft_html": "https://sandbox.zenodo.org/deposit/1126381",
+            "publish": "https://sandbox.zenodo.org/api/deposit/depositions/1126381/actions/publish",
+            "self": "https://sandbox.zenodo.org/api/deposit/depositions/1126381"
+        },
+        "metadata": {
+            "prereserve_doi": {
+                "doi": "10.5072/zenodo.1126381",
+                "recid": 1126381
+            }
+        },
+        "modified": "2022-11-04T15:52:31.224338+00:00",
+        "owner": 25613,
+        "record_id": 1126381,
+        "state": "unsubmitted",
+        "submitted": false,
+        "title": ""
+    },
+    "GWORB1022-07-seq": {
+        "conceptrecid": "1126382",
+        "created": "2022-11-04T15:52:32.658474+00:00",
+        "files": [],
+        "id": 1126383,
+        "links": {
+            "bucket": "https://sandbox.zenodo.org/api/files/d1025586-387a-4538-869f-ffcc527c7b87",
+            "discard": "https://sandbox.zenodo.org/api/deposit/depositions/1126383/actions/discard",
+            "edit": "https://sandbox.zenodo.org/api/deposit/depositions/1126383/actions/edit",
+            "files": "https://sandbox.zenodo.org/api/deposit/depositions/1126383/files",
+            "html": "https://sandbox.zenodo.org/deposit/1126383",
+            "latest_draft": "https://sandbox.zenodo.org/api/deposit/depositions/1126383",
+            "latest_draft_html": "https://sandbox.zenodo.org/deposit/1126383",
+            "publish": "https://sandbox.zenodo.org/api/deposit/depositions/1126383/actions/publish",
+            "self": "https://sandbox.zenodo.org/api/deposit/depositions/1126383"
+        },
+        "metadata": {
+            "prereserve_doi": {
+                "doi": "10.5072/zenodo.1126383",
+                "recid": 1126383
+            }
+        },
+        "modified": "2022-11-04T15:52:32.658496+00:00",
+        "owner": 25613,
+        "record_id": 1126383,
+        "state": "unsubmitted",
+        "submitted": false,
+        "title": ""
+    },
+    "PNGTY639-13": {
+        "conceptrecid": "1126384",
+        "created": "2022-11-04T16:05:17.063044+00:00",
+        "files": [],
+        "id": 1126385,
+        "links": {
+            "bucket": "https://sandbox.zenodo.org/api/files/277b4368-b4f9-46c9-8475-9ef392c62c22",
+            "discard": "https://sandbox.zenodo.org/api/deposit/depositions/1126385/actions/discard",
+            "edit": "https://sandbox.zenodo.org/api/deposit/depositions/1126385/actions/edit",
+            "files": "https://sandbox.zenodo.org/api/deposit/depositions/1126385/files",
+            "html": "https://sandbox.zenodo.org/deposit/1126385",
+            "latest_draft": "https://sandbox.zenodo.org/api/deposit/depositions/1126385",
+            "latest_draft_html": "https://sandbox.zenodo.org/deposit/1126385",
+            "publish": "https://sandbox.zenodo.org/api/deposit/depositions/1126385/actions/publish",
+            "self": "https://sandbox.zenodo.org/api/deposit/depositions/1126385"
+        },
+        "metadata": {
+            "prereserve_doi": {
+                "doi": "10.5072/zenodo.1126385",
+                "recid": 1126385
+            }
+        },
+        "modified": "2022-11-04T16:05:17.063060+00:00",
+        "owner": 25613,
+        "record_id": 1126385,
+        "state": "unsubmitted",
+        "submitted": false,
+        "title": ""
+    },
+    "PNGTY1842-15": {
+        "conceptrecid": "1126386",
+        "created": "2022-11-04T16:05:18.510246+00:00",
+        "files": [],
+        "id": 1126387,
+        "links": {
+            "bucket": "https://sandbox.zenodo.org/api/files/ffe3fc3d-5403-40fc-8047-da310cfc0821",
+            "discard": "https://sandbox.zenodo.org/api/deposit/depositions/1126387/actions/discard",
+            "edit": "https://sandbox.zenodo.org/api/deposit/depositions/1126387/actions/edit",
+            "files": "https://sandbox.zenodo.org/api/deposit/depositions/1126387/files",
+            "html": "https://sandbox.zenodo.org/deposit/1126387",
+            "latest_draft": "https://sandbox.zenodo.org/api/deposit/depositions/1126387",
+            "latest_draft_html": "https://sandbox.zenodo.org/deposit/1126387",
+            "publish": "https://sandbox.zenodo.org/api/deposit/depositions/1126387/actions/publish",
+            "self": "https://sandbox.zenodo.org/api/deposit/depositions/1126387"
+        },
+        "metadata": {
+            "prereserve_doi": {
+                "doi": "10.5072/zenodo.1126387",
+                "recid": 1126387
+            }
+        },
+        "modified": "2022-11-04T16:05:18.510258+00:00",
+        "owner": 25613,
+        "record_id": 1126387,
+        "state": "unsubmitted",
+        "submitted": false,
+        "title": ""
+    },
+    "GWORB1022-07": {
+        "conceptrecid": "1126388",
+        "created": "2022-11-04T16:05:19.213704+00:00",
+        "files": [],
+        "id": 1126389,
+        "links": {
+            "bucket": "https://sandbox.zenodo.org/api/files/41e63c9f-18ad-412b-b85b-5dabe8d12832",
+            "discard": "https://sandbox.zenodo.org/api/deposit/depositions/1126389/actions/discard",
+            "edit": "https://sandbox.zenodo.org/api/deposit/depositions/1126389/actions/edit",
+            "files": "https://sandbox.zenodo.org/api/deposit/depositions/1126389/files",
+            "html": "https://sandbox.zenodo.org/deposit/1126389",
+            "latest_draft": "https://sandbox.zenodo.org/api/deposit/depositions/1126389",
+            "latest_draft_html": "https://sandbox.zenodo.org/deposit/1126389",
+            "publish": "https://sandbox.zenodo.org/api/deposit/depositions/1126389/actions/publish",
+            "self": "https://sandbox.zenodo.org/api/deposit/depositions/1126389"
+        },
+        "metadata": {
+            "prereserve_doi": {
+                "doi": "10.5072/zenodo.1126389",
+                "recid": 1126389
+            }
+        },
+        "modified": "2022-11-04T16:05:19.213718+00:00",
+        "owner": 25613,
+        "record_id": 1126389,
+        "state": "unsubmitted",
+        "submitted": false,
+        "title": ""
+    },
+    "BOLD:AAJ6416": {
+        "conceptrecid": "1126390",
+        "created": "2022-11-04T16:06:19.808843+00:00",
+        "files": [],
+        "id": 1126391,
+        "links": {
+            "bucket": "https://sandbox.zenodo.org/api/files/be83c0de-34c1-4475-87ef-8a6a4104c3e8",
+            "discard": "https://sandbox.zenodo.org/api/deposit/depositions/1126391/actions/discard",
+            "edit": "https://sandbox.zenodo.org/api/deposit/depositions/1126391/actions/edit",
+            "files": "https://sandbox.zenodo.org/api/deposit/depositions/1126391/files",
+            "html": "https://sandbox.zenodo.org/deposit/1126391",
+            "latest_draft": "https://sandbox.zenodo.org/api/deposit/depositions/1126391",
+            "latest_draft_html": "https://sandbox.zenodo.org/deposit/1126391",
+            "publish": "https://sandbox.zenodo.org/api/deposit/depositions/1126391/actions/publish",
+            "self": "https://sandbox.zenodo.org/api/deposit/depositions/1126391"
+        },
+        "metadata": {
+            "prereserve_doi": {
+                "doi": "10.5072/zenodo.1126391",
+                "recid": 1126391
+            }
+        },
+        "modified": "2022-11-04T16:06:19.808856+00:00",
+        "owner": 25613,
+        "record_id": 1126391,
+        "state": "unsubmitted",
+        "submitted": false,
+        "title": ""
+    }
+}
