@@ -116,38 +116,12 @@
 		<dict>
 			<key>ItemData</key>
 			<dict>
-				<key>BookmarkData</key>
-				<data>
-				Ym9va+wCAAAAAAQQMAAAADBKzZlRT6XJxAdSS2Ky146K
-				lH7f1K2M3tnxX4q8Dvkr6AEAAAQAAAADAwAAAAgAKAUA
-				AAABAQAAVXNlcnMAAAAFAAAAAQEAAHJwYWdlAAAACwAA
-				AAEBAABEZXZlbG9wbWVudAAOAAAAAQEAAHplbm9kby1z
-				cGVjaWVzAAAMAAAAAQEAAG1hcHBpbmcuanNvbhQAAAAB
-				BgAAEAAAACAAAAAwAAAARAAAAFwAAAAIAAAABAMAAIRc
-				AAAAAAAACAAAAAQDAACWxgMAAAAAAAgAAAAEAwAAWSkl
-				AAAAAAAIAAAABAMAAGuPwgEAAAAACAAAAAQDAACVkMIB
-				AAAAABQAAAABBgAAjAAAAJwAAACsAAAAvAAAAMwAAAAI
-				AAAAAAQAAEHEiq9q1lAWGAAAAAECAAABAAAAAAAAAA8A
-				AAAAAAAAAAAAAAAAAAAIAAAABAMAAAMAAAAAAAAABAAA
-				AAMDAAD1AQAACAAAAAEJAABmaWxlOi8vLwwAAAABAQAA
-				TWFjaW50b3NoIEhECAAAAAQDAAAAkIKW5wAAAAgAAAAA
-				BAAAQcR/aqKAAAAkAAAAAQEAAEVFREJDNDk1LURGNTIt
-				NDU2QS1CNDMxLUZCNjA3QkYwNEFEMRgAAAABAgAAgQAA
-				AAEAAADvEwAAAQAAAAAAAAAAAAAAAQAAAAEBAAAvAAAA
-				AAAAAAEFAADMAAAA/v///wEAAAAAAAAAEAAAAAQQAABw
-				AAAAAAAAAAUQAADcAAAAAAAAABAQAAAIAQAAAAAAAEAQ
-				AAD4AAAAAAAAAAIgAADUAQAAAAAAAAUgAABEAQAAAAAA
-				ABAgAABUAQAAAAAAABEgAACIAQAAAAAAABIgAABoAQAA
-				AAAAABMgAAB4AQAAAAAAACAgAAC0AQAAAAAAADAgAADg
-				AQAAAAAAAAHAAAAoAQAAAAAAABHAAAAgAAAAAAAAABLA
-				AAA4AQAAAAAAABDQAAAEAAAAAAAAAA==
-				</data>
 				<key>FileURL</key>
-				<string>file:///Users/rpage/Development/zenodo-species/mapping.json</string>
+				<string>file:///Users/rpage/.Trash/mapping.json</string>
 				<key>HasSecurityScope</key>
 				<true/>
 				<key>RelativePath</key>
-				<string>./mapping.json</string>
+				<string>../../.Trash/mapping.json</string>
 				<key>TypeID</key>
 				<string>_CFileLocator</string>
 				<key>Version</key>
@@ -157,8 +131,6 @@
 			<string>mapping.json</string>
 			<key>ItemType</key>
 			<string>FileReference</string>
-			<key>UserOverrideItemName</key>
-			<true/>
 		</dict>
 		<key>9FF46BB9-F67C-41B2-BEA2-649E654443A6</key>
 		<dict>

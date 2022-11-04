@@ -82,7 +82,7 @@ function upload_metadata($deposit, $metadata)
 	else
 	{
 		echo "Error: HTTP " . $info['http_code'] . "\n";
-		exit();
+		//exit();
 	}
 	
 	
@@ -140,7 +140,7 @@ function publish($deposit)
 	else
 	{
 		echo "Error: HTTP " . $info['http_code'] . "\n";
-		exit();
+		//exit();
 	}
 
 	return $deposit;

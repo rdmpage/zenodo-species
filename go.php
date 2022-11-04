@@ -85,7 +85,7 @@ function url_to_filename($url)
 
 $records = array();
 
-$local_to_zenodo = array();
+$local_to_zenodo = new stdclass;
 
 $links = array();
 
@@ -97,6 +97,9 @@ if (!file_exists($mapping_filename))
 }
 $json = file_get_contents($mapping_filename);
 $local_to_zenodo = json_decode($json);
+
+print_r($local_to_zenodo);
+
 
 
 //----------------------------------------------------------------------------------------
@@ -135,7 +138,36 @@ if (1)
 			echo "$image_filename, is not an image!\n";
 			exit();
 		}
+		
+		//--------------------------------------------------------------------------------
+		// links
+		if (isset($row->specimen_id))
+		{		
+			if (!isset($links[$row->id]))
+			{
+				$links[$row->id] = array();				
+			}
+			if (!isset($links[$row->id]['documents']))
+			{
+				$links[$row->id]['documents'] = array();				
+			}
+		
+			$links[$row->id]['documents'][] = $row->specimen_id;
+			
+			// inverse
+			if (!isset($links[$row->specimen_id]))
+			{
+				$links[$row->specimen_id] = array();				
+			}
+			if (!isset($links[$row->specimen_id]['isDocumentedBy']))
+			{
+				$links[$row->specimen_id]['isDocumentedBy'] = array();				
+			}
+		
+			$links[$row->specimen_id]['isDocumentedBy'][] = $row->id;			
+		}
 				
+		//--------------------------------------------------------------------------------
 		// metadata
 		$row->metadata = new stdclass;
 		
@@ -160,7 +192,13 @@ if (1)
 		{
 			$row->metadata->description = "Image of " . $row->name;
 		}
-				
+		
+		// we need a creator, for now cheat
+		$row->metadata->creators = array();
+		$creator = new stdclass;
+		$creator->name = "Roderic D. M. Page";
+		$row->metadata->creators[] = $creator;
+						
 		if (isset($row->license))
 		{
 			switch 	($row->license)
@@ -183,6 +221,7 @@ if (1)
 			$row->metadata->license 		= 'cc-zero';		
 		}
 	
+		//--------------------------------------------------------------------------------
 		// create a deposit if we haven't already
 		if (!isset($local_to_zenodo->{$row->id}))
 		{
@@ -195,7 +234,7 @@ if (1)
 		
 		print_r($row);
 		
-		$records[] = $row;
+		$records[$row->id] = $row;
 	}
 }
 
@@ -226,6 +265,37 @@ if (1)
 			$row->name = $row->id;		
 		}
 		
+		//--------------------------------------------------------------------------------
+		// links
+		if (isset($row->specimen_id))
+		{		
+			if (!isset($links[$row->id]))
+			{
+				$links[$row->id] = array();				
+			}
+			if (!isset($links[$row->id]['documents']))
+			{
+				$links[$row->id]['documents'] = array();				
+			}
+			$links[$row->id]['documents'][] = $row->specimen_id;
+		
+			// inverse
+			
+			if (!isset($links[$row->specimen_id]))
+			{
+				$links[$row->specimen_id] = array();				
+			}
+			if (!isset($links[$row->specimen_id]['isDocumentedBy']))
+			{
+				$links[$row->specimen_id]['isDocumentedBy'] = array();				
+			}
+			
+		
+			$links[$row->specimen_id]['isDocumentedBy'][] = $row->id;
+			
+		}
+
+		//--------------------------------------------------------------------------------
 		// metadata
 		$row->metadata = new stdclass;
 		
@@ -247,9 +317,15 @@ if (1)
 		}
 		else
 		{
-			$row->metadata->description = $row->sequence;
+			$row->metadata->description = chunk_split($row->sequence, 60, "\n");
 		}
 				
+		// we need a creator, for now cheat
+		$row->metadata->creators = array();
+		$creator = new stdclass;
+		$creator->name = "Roderic D. M. Page";
+		$row->metadata->creators[] = $creator;
+
 		if (isset($row->license))
 		{
 			switch 	($row->license)
@@ -272,6 +348,7 @@ if (1)
 			$row->metadata->license 		= 'cc-zero';		
 		}		
 	
+		//--------------------------------------------------------------------------------
 		if (!isset($local_to_zenodo->{$row->id}))
 		{
 			echo "Create deposit...\n";
@@ -281,7 +358,7 @@ if (1)
 	
 		echo json_encode($local_to_zenodo->{$row->id});
 		
-		$records[] = $row;
+		$records[$row->id] = $row;
 	}
 }
 
@@ -298,6 +375,12 @@ if (1)
 
 	foreach ($data as $row)
 	{	
+		// must have a file
+		$specimen_filename = $row->id . '.txt';
+		
+		$row->filename = $specimen_filename;
+	
+		file_put_contents($specimen_filename, $row->id);	
 	
 		if (!isset($row->name))
 		{
@@ -320,7 +403,37 @@ if (1)
 			
 			$row->description = join(', ', $terms);
 		}
+		
+		//--------------------------------------------------------------------------------
+		// links
+		if (isset($row->taxon_id))
+		{		
+			if (!isset($links[$row->id]))
+			{
+				$links[$row->id] = array();				
+			}
+			if (!isset($links[$row->id]['isPartOf']))
+			{
+				$links[$row->id]['isPartOf'] = array();				
+			}
+			$links[$row->id]['isPartOf'][] = $row->taxon_id;
+		
+			// inverse			
+			if (!isset($links[$row->taxon_id]))
+			{
+				$links[$row->taxon_id] = array();				
+			}
+			if (!isset($links[$row->taxon_id]['hasPart']))
+			{
+				$links[$row->taxon_id]['hasPart'] = array();				
+			}			
+		
+			$links[$row->taxon_id]['hasPart'][] = $row->id;
+			
+		}
+		
 	
+		//--------------------------------------------------------------------------------
 		// metadata
 		$row->metadata = new stdclass;
 		
@@ -329,6 +442,12 @@ if (1)
 		$row->metadata->title = $row->name;
 		$row->metadata->description = $row->description;
 				
+		// we need a creator, for now cheat
+		$row->metadata->creators = array();
+		$creator = new stdclass;
+		$creator->name = "Roderic D. M. Page";
+		$row->metadata->creators[] = $creator;
+
 		if (isset($row->license))
 		{
 			switch 	($row->license)
@@ -352,6 +471,7 @@ if (1)
 		}		
 	
 	
+		//--------------------------------------------------------------------------------
 		if (!isset($local_to_zenodo->{$row->id}))
 		{
 			echo "Create deposit...\n";
@@ -361,7 +481,7 @@ if (1)
 	
 		echo json_encode($local_to_zenodo->{$row->id});
 		
-		$records[] = $row;
+		$records[$row->id] = $row;
 	}
 }
 
@@ -378,6 +498,15 @@ if (1)
 
 	foreach ($data as $row)
 	{	
+		// must have a file
+		$taxon_filename = $row->id . '.txt';
+		
+		$row->filename = $taxon_filename;
+	
+		file_put_contents($taxon_filename, $row->id);	
+	
+	
+		//--------------------------------------------------------------------------------
 		// metadata
 		$row->metadata = new stdclass;
 		
@@ -403,6 +532,12 @@ if (1)
 			exit();
 		}
 				
+		// we need a creator, for now cheat
+		$row->metadata->creators = array();
+		$creator = new stdclass;
+		$creator->name = "Roderic D. M. Page";
+		$row->metadata->creators[] = $creator;
+
 		if (isset($row->license))
 		{
 			switch 	($row->license)
@@ -427,6 +562,7 @@ if (1)
 	
 	
 	
+		//--------------------------------------------------------------------------------
 		if (!isset($local_to_zenodo->{$row->id}))
 		{
 			echo "Create deposit...\n";
@@ -436,58 +572,104 @@ if (1)
 	
 		echo json_encode($local_to_zenodo->{$row->id});
 		
-		$records[] = $row;
+		$records[$row->id] = $row;
 	}
 }
 
 
 file_put_contents($mapping_filename, json_encode($local_to_zenodo, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE));
 
-print_r($records);
 
-// add crosslinks
 
-// push to Zenodo
+// add crosslinks between records
+print_r($links);
 
-foreach ($records as $record)
+foreach ($links as $source => $typed_links)
 {
-	print_r($record);
-	
-	
-	if (isset($local_to_zenodo->{$record->id}))
+	foreach ($typed_links as $relation => $targets)
 	{
-		print_r($local_to_zenodo->{$record->id});
-		
-		
-		$upload_item = new stdclass;
-		$upload_item->metadata = $record->metadata;
-		
-		print_r($upload_item);
-		
-		upload_metadata(
-			$local_to_zenodo->{$record->id}, 
-			$upload_item 
-			);
+		foreach ($targets as $target)
+		{
+			echo $source . ' -> ' . $target . "\n";
+			
+			
+			if (!isset($records[$source]->metadata->related_identifiers))
+			{
+				$records[$source]->metadata->related_identifiers = array();
+			}
+	
+			$related = new stdclass;
+			$related->relation = $relation;
+			
+			if ($config['zenodo_server'] == 'https://sandbox.zenodo.org')
+			{
+				$related->identifier = 'https://sandbox.zenodo.org/record/' . $local_to_zenodo->{$target}->id;			
+			}
+			else
+			{
+				$related->identifier = 'https://doi.org/' . $config['zenodo_doi_prefix'] . '/zenodo.' . $local_to_zenodo->{$target}->id;
+			}
+			
+			$records[$source]->metadata->related_identifiers[] = $related;
+		}
 	}
-   
-	
-	if (isset($local_to_zenodo->{$record->id}) && isset($row->filename))
-	{
-		print_r($local_to_zenodo->{$record->id});
-		
-		upload_file(
-			$local_to_zenodo->{$record->id}, 
-			dirname(__FILE__) . '/' . $row->filename,
-			$row->filename
-			);
-	}
-	
-	
-	exit();	
 }
 
+// push to Zenodo
+if (0)
+{
+	foreach ($records as $record)
+	{
+		//print_r($record);
+	
+		// metadata
+		if (isset($local_to_zenodo->{$record->id}))
+		{
+			print_r($local_to_zenodo->{$record->id});
+				
+			$upload_item = new stdclass;
+			$upload_item->metadata = $record->metadata;
+		
+			print_r($upload_item);
+		
+			upload_metadata(
+				$local_to_zenodo->{$record->id}, 
+				$upload_item 
+				);
+		}
+   
+		// do we have data (i.e., a file)?
+		if (isset($local_to_zenodo->{$record->id}) && isset($record->filename))
+		{
+			print_r($local_to_zenodo->{$record->id});
+		
+			upload_file(
+				$local_to_zenodo->{$record->id}, 
+				dirname(__FILE__) . '/' . $record->filename,
+				$record->filename
+				);
+		}
+	
+	
+		//exit();	
+	}
+}
 
 // publish
+if (0)
+{
+	foreach ($records as $record)
+	{
+		print_r($record);
+	
+		if (isset($local_to_zenodo->{$record->id}))
+		{
+			publish($local_to_zenodo->{$record->id});
+		}
+		
+		//exit();
+	}
+}
 
 
 ?>
