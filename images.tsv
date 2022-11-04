@@ -1,4 +1,4 @@
-id	url	name	format	specimen_id	doi
-http://www.boldsystems.org/pics/PNGTY/960680d+1406335524.jpg	http://www.boldsystems.org/pics/PNGTY/960680d+1406335524.jpg	PNGTY639-13 Dorsal	image/jpeg	2251232345	
-http://www.boldsystems.org/pics/PNGTY/960680+1446592332.jpg	http://www.boldsystems.org/pics/PNGTY/960680+1446592332.jpg	PNGTY1842-15 Dorsal	image/jpeg	2251231996	
-http://www.boldsystems.org/pics/GWORB/BC_ZSM_Lep_02244+1180603316.jpg	http://www.boldsystems.org/pics/GWORB/BC_ZSM_Lep_02244+1180603316.jpg	GWORB1022-07 Dorsal	image/jpeg	2250571703	
+id	url	name	format	license	specimen_id	doi
+http://www.boldsystems.org/pics/PNGTY/960680d+1406335524.jpg	http://www.boldsystems.org/pics/PNGTY/960680d+1406335524.jpg	PNGTY639-13 Dorsal	image/jpeg	http://creativecommons.org/licenses/by-nc-sa/4.0/	PNGTY639-13	
+http://www.boldsystems.org/pics/PNGTY/960680+1446592332.jpg	http://www.boldsystems.org/pics/PNGTY/960680+1446592332.jpg	PNGTY1842-15 Dorsal	image/jpeg	http://creativecommons.org/licenses/by-nc-sa/4.0/	PNGTY1842-15	
+http://www.boldsystems.org/pics/GWORB/BC_ZSM_Lep_02244+1180603316.jpg	http://www.boldsystems.org/pics/GWORB/BC_ZSM_Lep_02244+1180603316.jpg	GWORB1022-07 Dorsal	image/jpeg	http://creativecommons.org/licenses/by-nc-sa/4.0/	GWORB1022-07	
