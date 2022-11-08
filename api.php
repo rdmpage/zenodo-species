@@ -73,6 +73,8 @@ function upload_metadata($deposit, $metadata)
 	$info = curl_getinfo($ch); 
 	curl_close($ch);
 	
+	//echo json_encode($metadata);
+	//echo $url . "\n";
 	//print_r($info);
 	
 	if ($info['http_code'] == 200)
@@ -140,7 +142,7 @@ function publish($deposit)
 	else
 	{
 		echo "Error: HTTP " . $info['http_code'] . "\n";
-		//exit();
+		exit();
 	}
 
 	return $deposit;
