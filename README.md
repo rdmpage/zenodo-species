@@ -42,6 +42,25 @@ Need local database to store DOIs (concept and version)
 Create a YAML file that specifies how to process each data type, what relationships we expect to exist, what file types we need to add.
 
 
+```
+digraph G {
+    rankdir=LR;
+"Pseudeusemia bursadoides" -> "PNGTY639-13" [label=hasPart];
+"Pseudeusemia bursadoides" -> "PNGTY1842-15" [label=hasPart];
+"Pseudeusemia bursadoides" -> "GWORB1022-07" [label=hasPart];
+
+"GWORB1022-07" -> "GWORB1022-07-seq" [label=isDocumentedBy];
+"PNGTY1842-15" -> "PNGTY1842-15-seq" [label=isDocumentedBy];
+"PNGTY639-13" -> "PNGTY639-13-seq" [label=isDocumentedBy];
+
+"GWORB1022-07" -> "BC_ZSM_Lep_02244+1180603316.jpg" [label=isDocumentedBy];
+"PNGTY1842-15" -> "PNGTY/960680+1446592332.jpg" [label=isDocumentedBy];
+"PNGTY639-13" -> "PNGTY/960680d+1406335524.jpg" [label=isDocumentedBy];
+
+}
+```
+
+
 
 
 

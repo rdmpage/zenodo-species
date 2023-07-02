@@ -1,0 +1,17 @@
+{
+    "name": "rpage/pilot",
+    "require": {
+        "box/spout": "^3.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rpage\\Pilot\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Roderic Page",
+            "email": "rdmpage@gmail.com"
+        }
+    ]
+}
